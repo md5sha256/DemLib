@@ -34,13 +34,8 @@ dependencies {
 }
 
 compileJava {
-    JavaCompiler compiler = javaToolchains.compilerFor {
-        JavaLanguageVersion.of(8)
-    }.orNull
-    if (compiler == null || compiler.metadata.languageVersion.asInt() > 10) {
-        options.release.set(8)
-    } else {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+    javaToolchains.compilerFor {
+        JavaLanguageVersion.of(11)
     }
+    options.release.set(11)
 }
