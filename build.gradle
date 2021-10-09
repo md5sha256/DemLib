@@ -34,8 +34,6 @@ dependencies {
 }
 
 compileJava {
-    javaToolchains.compilerFor {
-        JavaLanguageVersion.of(11)
-    }
-    options.release.set(11)
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
