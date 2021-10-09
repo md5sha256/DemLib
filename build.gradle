@@ -37,7 +37,7 @@ compileJava {
     JavaCompiler compiler = javaToolchains.compilerFor {
         JavaLanguageVersion.of(8)
     }.orNull
-    if (compiler == null || compiler.metadata.languageVersion.asInt() < 10) {
+    if (compiler == null || compiler.metadata.languageVersion.asInt() > 10) {
         options.release.set(8)
     } else {
         sourceCompatibility = JavaVersion.VERSION_1_8
