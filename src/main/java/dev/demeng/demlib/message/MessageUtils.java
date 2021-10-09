@@ -37,8 +37,7 @@ public final class MessageUtils {
    * @return
    */
   public static String colorize(String message) {
-
-    if (Bukkit.getVersion().contains("1.16")) {
+    if (Bukkit.getVersion().contains("1.16") || Bukkit.getVersion().contains("1.17")) {
 
       Matcher matcher = HEX_PATTERN.matcher(message);
 

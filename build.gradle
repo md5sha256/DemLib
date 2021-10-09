@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'dev.demeng'
-version = '4.8.1'
+version = '4.8.2'
 
 shadowJar {
     relocate 'com.zaxxer.hikari', 'dev.demeng.demlib.lib.hikari'
@@ -28,8 +28,8 @@ dependencies {
     // compile 'org.slf4j:slf4j-api:1.7.30'
     // compile 'org.slf4j:slf4j-simple:1.7.30'
 
-    compileOnly 'org.projectlombok:lombok:1.18.12'
-    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
 compileJava {
